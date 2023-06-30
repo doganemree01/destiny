@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover{
+    color: var(--soft-color);
+    transition: ease-in-out .2s;
+}
+button{
+    outline: none;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 2px;
+    background-color: var(--border-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: var(--soft-color);
+    color: var(--border-color);
+    transition: ease-in-out .2s;
+}
+
+:root{
+    --bg-color: #121212;
+    --btn-color: #fff;
+    --border-color: #17594A;
+    --soft-color: #cdcccc;
+}
+body{
+    background-color: var(--bg-color);
+    color: #fff;
+}
+
+/* ! header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    background-color: var(--bg-color);
+    z-index: 1000;
+}
+
+header .header-logo{
+    color: var(--border-color);
+}
+
+nav a{
+    color: var(--border-color);
+    margin-left: 10px;
+}
+
+nav a:nth-child(5), a:nth-child(6){
+    color: #fff;
+}
+
+.nav-btn{
+    display: none;
+}
+
+/* ! footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 50px;
+    text-align: start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer .copy{
+    text-align: center;
+    padding: 5px;
+}
+
+.content-tags{
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-links{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.content-links input{
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    padding: 4px 8px;
+}
+
+.content-links h4{
+    font-size: 1.4rem;
+}
+
+/* ! main bölümü  */
+/* ? welcome kısmı */
+#welcome-sec{
+    background: url(/images/back.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-box{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-box h2{
+    color: var(--border-color);
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 2px var(--bg-color);
+}
+
+.hero-box p{
+    color: #fff;
+}
+
+.hero-btn button:nth-child(1){
+    background-color: var(--bg-color);
+    color: #fff;
+}
+
+.hero-btn button:nth-child(1):hover{
+    background-color: var(--soft-color);
+    color: var(--border-color);
+}
+
+section{
+    padding: 40px;
+}
+
+/* ? window kısmı*/
+#window-sec{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: 50px;
+}
+
+.window-info{
+    display: grid;
+    max-width: 600px;
+    gap: 20px;
+    text-align: center;
+}
+
+.window-info button{
+    font-size: 2rem;
+}
+.windows{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+}
+.window{
+    min-width: 200px;
+    height: 400px;
+    background: url(/images/sec2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 40px 40px 0 0;
+}
+
+.window:nth-child(2){
+    border-radius: 40px;
+}
+
+/* ? cards kısmı */
+
+#cards-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.cards-info{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 100px;
+}
+
+.card{
+    border: solid gray 2px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.card video{
+    min-width: 100px;
+    height: 200px;
+}
+
+/* ? list sec kısmı */
+
+#list-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.list-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid gray;
+}
+
+ul li h2{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+}
+
+ul li span{
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+ul li img {
+    width: 70px;
+    height: 90px;
+}
+
+
+
+
+
+/* ? media etiketleri */
+
+@media (max-width: 900px) {
+    .content-tags{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .nav-btn{
+        display: block;
+    }
+
+    .active{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 5px;
+        top: 70px;
+        gap: 5px;
+        background: var(--soft-color);
+        padding: 30px;
+        border-radius: 10px;
+    }
+}
+@media (max-width: 1100px) {
+    #window-sec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .window{
+        min-width: 100px;
+        height: 200px;
+    }
+    .windows{
+        padding: 10px;
+    }
+
+    #cards-sec{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: 400px;
+        justify-content: center;
+    }
+}
+
+
+
+
