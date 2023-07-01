@@ -218,6 +218,7 @@ section{
     display: flex;
     flex-direction: column;
     max-width: 600px;
+    gap: 10px;
 }
 
 .cards{
@@ -234,6 +235,10 @@ section{
     padding: 10px;
     gap: 10px;
     justify-content: space-around;
+}
+
+.cards-info h3{
+    font-size: 2rem;
 }
 
 .card video{
@@ -284,9 +289,259 @@ ul li img {
     height: 90px;
 }
 
+/* ! projects bölümü */
 
+.welcome-title{
+    font-size: 3rem;
+    max-width: 1300px;
+    padding: 100px;
+    background-color: #3EECAC;
+    background-image: linear-gradient(
+    19deg, #3EECAC 0%, #EE74E1 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+/* ? neler yapıyoruz kısmı */
 
+#what-we-do{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.what-info{
+    max-width: 600px;
+    text-align: center;
+    padding: 10px;
+}
+
+.what-info h2{
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+.what-cards{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.web-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+    gap: 20px;
+    max-width: 400px;
+    padding: 20px;
+    height: 150px;
+    background-color: #323443;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+}
+.web-card img{
+    position: absolute;
+    margin-top: -80px;
+}
+
+.web-card img{
+    width: 50px;
+    height: 50px;
+}
+
+/* ? projects kısmı */
+
+#projects-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+#projects-sec h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.project{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.pro-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+}
+
+.pro-info h4{
+    font-weight: lighter;
+    color: #3EECAC;
+}
+
+.pro-info h2{
+    font-size: 2rem;
+}
+
+.pro-img{
+    padding: 40px 40px 0 40px;
+    background-color: #323443;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+}
+
+.pro-img .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #cdcccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pro-img:hover{
+    background-color: #3EECAC;
+    background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
+}
+
+/* ! team html bölümü */
+
+#top-sec{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-left{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.auction{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: gray ;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: #3EECAC 2px 2px 12px;
+}
+
+.counters{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.counter{
+    background-color: #323443;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    max-width: 80px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons button{
+    padding: 10px;
+    margin-top: 10px;
+} 
+
+.top-right img{
+    border-radius: 10px;
+}
+
+/* ? images-sec */
+
+#images-sec{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.image-wraper{
+    position: relative;
+    gap: 10px;
+    width: 320px;
+}
+.image-wraper img{
+    border-radius: 16px;
+    width: 100%;
+}
+
+.image-wraper h1{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.1px);
+    -webkit-backdrop-filter: blur(1.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+/* ? seller-sec kısmı */
+
+#seller-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.seller-info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.seller-donation{
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 40px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.seller-card{
+    background-color: #3EECAC;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.seller-card img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
 
 /* ? media etiketleri */
 
@@ -316,6 +571,13 @@ ul li img {
         padding: 30px;
         border-radius: 10px;
     }
+
+    #top-sec{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 40px;
+    }
 }
 @media (max-width: 1100px) {
     #window-sec{
@@ -342,6 +604,44 @@ ul li img {
         display: grid;
         grid-template-columns: 400px;
         justify-content: center;
+    }
+
+    .welcome-title{
+        font-size: 2.2rem;
+        padding: 30px;
+    }
+
+    #what-we-do{
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .what-cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .pro-img{
+        max-width: 350px;
+    }
+
+    #images-sec{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .seller-donation{
+        display: grid;
+        grid-template-columns: repeat(2,160px);
     }
 }
 
